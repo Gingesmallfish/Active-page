@@ -1,21 +1,21 @@
-import {FC} from "react";
+import { FC } from "react";
 //引入Title
 import Title1Image from "../../assets/title1.jpg"
 import Title2Image from "../../assets/title2.jpg"
 import CommentImage from "../../assets/comment.jpg"
 import styles from "./styles.module.scss"
-const ThirdSection:FC = () => {
-  return(
-      <div className={ styles.thirdSection }>
+const ThirdSection: FC = () => {
+  return (
+    <div className={styles.thirdSection}>
 
-          <img src={ Title1Image } alt="Title 1"/>
+      <img src={Title1Image} alt="Title 1" />
 
-          <img className={ styles.comment } src={ CommentImage } alt="Comment"/>
+      <img className={styles.comment} src={CommentImage} alt="Comment" />
 
-          <img src={ Title2Image } alt="Title 1"/>
+      <img src={Title2Image} alt="Title 1" />
 
-          <img className={ styles.comment } src={ CommentImage } alt="comment"/>
-      </div>
+      <img className={styles.comment} src={CommentImage} alt="comment" />
+    </div>
   )
 }
 

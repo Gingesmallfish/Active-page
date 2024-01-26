@@ -2,7 +2,7 @@
   padding-top: 56px;
   position: relative;
 
-  ul{
+  ul {
     position: absolute;
     top: 0;
     width: 100%;
@@ -12,16 +12,15 @@
     justify-content: space-around;
     background-color: #e36c3f;
 
-    &.isFixed{
+    &.isFixed {
       position: fixed;
-
     }
-    li{
+    li {
       position: relative;
       color: white;
       list-style: none;
 
-      .line{
+      .line {
         position: absolute;
         left: 50%;
         bottom: -8px;
@@ -30,7 +29,7 @@
         height: 4px;
         background-color: yellow;
         opacity: 0;
-        transition: opacity .3s;
+        transition: opacity 0.3s;
 
         &.visible {
           opacity: 1;
@@ -54,7 +53,7 @@
   }
 
   // App 内打开
-  .btnWrapper{
+  .btnWrapper {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -63,12 +62,14 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     opacity: 0;
     transform: translateX(64px);
-    transition: opacity .3s, transform .3s;
+    transition:
+      opacity 0.3s,
+      transform 0.3s;
 
-    &.visible{
+    &.visible {
       opacity: 1;
       transform: translateX(0);
     }
@@ -77,7 +78,7 @@
       width: 100px;
     }
 
-    button{
+    button {
       border: none;
       padding: 8px 16px;
       border-radius: 50px;
