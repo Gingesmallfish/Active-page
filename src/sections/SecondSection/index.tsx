@@ -93,7 +93,7 @@ const SecondSection: FC = () => {
 
     }
 
-    // 监听到w全局windows
+    // 监听到全局windows
     useEffect(() => {
         window.addEventListener('scroll', onScroll);
 
